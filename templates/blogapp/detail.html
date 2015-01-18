@@ -1,0 +1,23 @@
+{% extends 'blogapp/main.html' %}
+{% load blog_extras %}
+
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+    <section class="articles">
+        <article>
+            <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+
+            <div>{{ post.text|safe|linebreaksbr|my_escape }}</div>
+            <div class="extra-info">
+                <p>{{ post.timestamp|date:"d M, Y" }}</p>
+            </div>
+{#            {% if post.get_previous_by_timestamp %}#}
+{#                <a href="#">{{ post.get_previous_by_timestamp}}</a>#}
+{#            {% endif %}#}
+{#            {% if post.get_next_by_timestamp %}#}
+{#                <a href="#">{{ post.get_next_by_timestamp }}</a>#}
+{#            {% endif %}#}
+            {% include 'blogapp/disqus-block.html' %}
+        </article>
+    </section>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load staticfiles i18n %}
+{% block head %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/prism.css' %}" rel="stylesheet">
+
+    {% block body-end %}
+        <script src="{% static 'js/prism.js' %}"></script>
+        {% include 'blogapp/disqus-counter.html' %}
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'blogapp/main.html' %}
+{% load i18n staticfiles blog_extras %}
+{% block title %}Блог{% endblock %}
+{% block content %}
+    <section class="articles">
+        {% for post in posts %}
+            <article>
+                <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+
+                <div>{{ post.text.excerpt|safe|linebreaksbr|my_escape }}</div>
+
+                <div class="extra-info">
+                    <p>{{ post.timestamp|date:"d M, Y" }}</p>
+                    <a href="{{ post.get_absolute_url }}#disqus_thread"></a>
+                </div>
+
+            </article>
+        {% endfor %}
+    </section>
+    {% include 'blogapp/paginator.html' %}
+    {# TODO:read more button #}
+{% endblock %}

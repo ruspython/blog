@@ -1,0 +1,198 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'grunt-contrib-less' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'grunt-contrib-less', null ]
+5 verbose cache add name=undefined spec="grunt-contrib-less" args=["grunt-contrib-less",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'grunt-contrib-less',
+6 verbose parsed url   path: 'grunt-contrib-less',
+6 verbose parsed url   href: 'grunt-contrib-less' }
+7 silly lockFile ec52cd20-grunt-contrib-less grunt-contrib-less
+8 verbose lock grunt-contrib-less /Users/vlad/.npm/ec52cd20-grunt-contrib-less.lock
+9 silly lockFile ec52cd20-grunt-contrib-less grunt-contrib-less
+10 silly lockFile ec52cd20-grunt-contrib-less grunt-contrib-less
+11 verbose addNamed [ 'grunt-contrib-less', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile df1440a2-grunt-contrib-less grunt-contrib-less@
+14 verbose lock grunt-contrib-less@ /Users/vlad/.npm/df1440a2-grunt-contrib-less.lock
+15 silly addNameRange { name: 'grunt-contrib-less', range: '*', hasData: false }
+16 verbose request where is /grunt-contrib-less
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 795e12b54f5687db
+19 verbose url raw /grunt-contrib-less
+20 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-less' ]
+21 verbose url resolved https://registry.npmjs.org/grunt-contrib-less
+22 verbose request where is https://registry.npmjs.org/grunt-contrib-less
+23 info trying registry request attempt 1 at 22:17:40
+24 verbose etag "BEA54UTKKQPE5FQVNTJHICAO"
+25 http GET https://registry.npmjs.org/grunt-contrib-less
+26 http 200 https://registry.npmjs.org/grunt-contrib-less
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Sat, 27 Dec 2014 19:17:41 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"IGQ3QDKTCX0OTYEVBK7JSGP6"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '64310',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '47',
+27 silly registry.get     'x-served-by': 'cache-fra1228-FRA',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1419707861.736311,VS0,VE0',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'grunt-contrib-less', range: '*', hasData: true }
+29 silly addNameRange versions [ 'grunt-contrib-less',
+29 silly addNameRange   [ '0.1.0',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.2',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.3.1',
+29 silly addNameRange     '0.3.2',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.5.1',
+29 silly addNameRange     '0.5.2',
+29 silly addNameRange     '0.6.0',
+29 silly addNameRange     '0.6.1',
+29 silly addNameRange     '0.6.2',
+29 silly addNameRange     '0.6.3',
+29 silly addNameRange     '0.6.4',
+29 silly addNameRange     '0.6.5',
+29 silly addNameRange     '0.7.0',
+29 silly addNameRange     '0.8.0',
+29 silly addNameRange     '0.8.1',
+29 silly addNameRange     '0.8.2',
+29 silly addNameRange     '0.8.3',
+29 silly addNameRange     '0.9.0',
+29 silly addNameRange     '0.10.0',
+29 silly addNameRange     '0.11.0',
+29 silly addNameRange     '0.11.1',
+29 silly addNameRange     '0.11.2',
+29 silly addNameRange     '0.11.3',
+29 silly addNameRange     '0.11.4',
+29 silly addNameRange     '0.12.0',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '0.5.0-rc7' ] ]
+30 verbose addNamed [ 'grunt-contrib-less', '1.0.0' ]
+31 verbose addNamed [ '1.0.0', '1.0.0' ]
+32 silly lockFile 8e6efe10-grunt-contrib-less-1-0-0 grunt-contrib-less@1.0.0
+33 verbose lock grunt-contrib-less@1.0.0 /Users/vlad/.npm/8e6efe10-grunt-contrib-less-1-0-0.lock
+34 silly lockFile 91db1db2-ess-grunt-contrib-less-1-0-0-tgz https://registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz
+35 verbose lock https://registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz /Users/vlad/.npm/91db1db2-ess-grunt-contrib-less-1-0-0-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz',
+36 verbose addRemoteTarball   '370e5f18682bf4ea72a622fece416a08bb194523' ]
+37 info retry fetch attempt 1 at 22:17:42
+38 verbose fetch to= /var/folders/6q/wxkqq_cs0ln0yy9kcf63wcf80000gn/T/npm-1259-Q3E3RubP/registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz
+39 http GET https://registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz
+40 http 200 https://registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz
+41 silly lockFile 91db1db2-ess-grunt-contrib-less-1-0-0-tgz https://registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz
+42 silly lockFile 91db1db2-ess-grunt-contrib-less-1-0-0-tgz https://registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz
+43 silly lockFile 8e6efe10-grunt-contrib-less-1-0-0 grunt-contrib-less@1.0.0
+44 silly lockFile 8e6efe10-grunt-contrib-less-1-0-0 grunt-contrib-less@1.0.0
+45 silly lockFile df1440a2-grunt-contrib-less grunt-contrib-less@
+46 silly lockFile df1440a2-grunt-contrib-less grunt-contrib-less@
+47 silly resolved [ { name: 'grunt-contrib-less',
+47 silly resolved     description: 'Compile LESS files to CSS.',
+47 silly resolved     version: '1.0.0',
+47 silly resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-less',
+47 silly resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'git://github.com/gruntjs/grunt-contrib-less.git' },
+47 silly resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-less/issues' },
+47 silly resolved     licenses: [ [Object] ],
+47 silly resolved     engines: { node: '>=0.10.0' },
+47 silly resolved     scripts: { test: 'grunt test' },
+47 silly resolved     dependencies:
+47 silly resolved      { async: '^0.9.0',
+47 silly resolved        chalk: '^0.5.1',
+47 silly resolved        less: '^2.1.0',
+47 silly resolved        lodash: '^2.4.1' },
+47 silly resolved     devDependencies:
+47 silly resolved      { grunt: '^0.4.5',
+47 silly resolved        'grunt-contrib-clean': '^0.6.0',
+47 silly resolved        'grunt-contrib-internal': '^0.4.11',
+47 silly resolved        'grunt-contrib-jshint': '^0.10.0',
+47 silly resolved        'grunt-contrib-nodeunit': '^0.4.1',
+47 silly resolved        'less-plugin-clean-css': '^1.2.0' },
+47 silly resolved     peerDependencies: { grunt: '~0.4.5' },
+47 silly resolved     keywords: [ 'gruntplugin' ],
+47 silly resolved     files: [ 'tasks', 'LICENSE-MIT' ],
+47 silly resolved     appveyor_id: 'e3aa4d07xe4w4u05',
+47 silly resolved     contributors:
+47 silly resolved      [ [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object] ],
+47 silly resolved     gitHead: '14c61065c1ab5dc94b463c6514c2d9932e5f020d',
+47 silly resolved     _id: 'grunt-contrib-less@1.0.0',
+47 silly resolved     _shasum: '370e5f18682bf4ea72a622fece416a08bb194523',
+47 silly resolved     _from: 'grunt-contrib-less@',
+47 silly resolved     _npmVersion: '1.4.28',
+47 silly resolved     _npmUser: { name: 'vladikoff', email: 'vlad@vladikoff.com' },
+47 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+47 silly resolved     dist:
+47 silly resolved      { shasum: '370e5f18682bf4ea72a622fece416a08bb194523',
+47 silly resolved        tarball: 'http://registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz' },
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/grunt-contrib-less/-/grunt-contrib-less-1.0.0.tgz' } ]
+48 info install grunt-contrib-less@1.0.0 into /usr/local/lib
+49 info installOne grunt-contrib-less@1.0.0
+50 verbose lib/node_modules/grunt-contrib-less unbuild
+51 verbose tar unpack /Users/vlad/.npm/grunt-contrib-less/1.0.0/package.tgz
+52 silly lockFile 967cac27--node-modules-grunt-contrib-less tar:///usr/local/lib/node_modules/grunt-contrib-less
+53 verbose lock tar:///usr/local/lib/node_modules/grunt-contrib-less /Users/vlad/.npm/967cac27--node-modules-grunt-contrib-less.lock
+54 silly lockFile 12462ac7-t-contrib-less-1-0-0-package-tgz tar:///Users/vlad/.npm/grunt-contrib-less/1.0.0/package.tgz
+55 verbose lock tar:///Users/vlad/.npm/grunt-contrib-less/1.0.0/package.tgz /Users/vlad/.npm/12462ac7-t-contrib-less-1-0-0-package-tgz.lock
+56 silly gunzTarPerm modes [ '755', '644' ]
+57 error Error: EACCES, mkdir '/usr/local/lib/node_modules/grunt-contrib-less'
+57 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/grunt-contrib-less']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/local/lib/node_modules/grunt-contrib-less',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/local/lib/node_modules/grunt-contrib-less',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:107:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Darwin 14.1.0
+60 error command "node" "/usr/local/bin/npm" "install" "-g" "grunt-contrib-less"
+61 error cwd /Users/vlad/PycharmProjects/blog/blog
+62 error node -v v0.10.32
+63 error npm -v 1.4.28
+64 error path /usr/local/lib/node_modules/grunt-contrib-less
+65 error fstream_path /usr/local/lib/node_modules/grunt-contrib-less
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/grunt-contrib-less'
+71 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:107:15)
+72 verbose exit [ 3, true ]

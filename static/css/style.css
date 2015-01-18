@@ -1,0 +1,143 @@
+html {
+  font-family: Noto Sans, serif;
+}
+body {
+  background-color: #dce7eb;
+}
+section.articles {
+  display: block;
+  margin: 0 20%;
+  padding: 10px;
+  width: 60%;
+}
+article {
+  margin-bottom: 10px;
+  padding: 2% 5%;
+  border-top: solid 5px #36ab32;
+  background: #ffffff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+article div {
+  font-size: 1.3em;
+  margin: 10px;
+}
+article pre {
+  font-size: 0.8em;
+}
+article h1,
+article h2 {
+  margin: 10px;
+}
+header {
+  font-size: 3em;
+  color: #008800;
+}
+.current-page-paginator {
+  transition: 0.3s;
+  background-color: #36ab32;
+  border-radius: 5px;
+}
+.current-page-paginator a {
+  color: white;
+}
+.extra-info {
+  display: block;
+  font-size: 0.7em;
+  color: #36ab32;
+  margin: 1% 10px;
+  width: 50%;
+  height: 50px;
+}
+.extra-info p {
+  display: inline;
+  float: left;
+  font-style: italic;
+  margin: 6% 6% 0 0;
+}
+.extra-info a {
+  display: inline;
+  float: left;
+  margin-top: 6%;
+  font-size: 1.2em;
+}
+.paginator {
+  list-style: none;
+  margin: 3% 35%;
+  margin-bottom: 8%;
+  font-size: 2em;
+}
+.paginator li {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  margin: 0 5px;
+  padding: 3px;
+  line-height: 1.2;
+}
+.paginator li a {
+  color: #36ab32;
+  text-decoration: none;
+}
+.paginator li:hover {
+  transition: 0.3s;
+  background-color: #36ab32;
+  border-radius: 5px;
+}
+.paginator li:hover a {
+  color: white;
+}
+.paginator .current-page {
+  transition: 0.3s;
+  background-color: #36ab32;
+  border-radius: 5px;
+}
+.paginator .current-page a {
+  color: white;
+}
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3em;
+}
+p {
+  font-size: 1.3em;
+}
+h1,
+h2 {
+  color: #36ab32;
+}
+h1 a,
+h2 a {
+  color: #36ab32;
+  text-decoration: none;
+}
+@media (max-width: 721px) {
+  section.articles {
+    display: block;
+    margin: 0 2%;
+    padding: 3px;
+    width: 96%;
+  }
+  article {
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+  article div {
+    margin: 10px;
+  }
+  article h1,
+  article h2 {
+    margin: 10px;
+  }
+  .paginator {
+    margin: 3% 20%;
+  }
+  .paginator .item-index {
+    display: none;
+  }
+}
