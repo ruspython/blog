@@ -16,13 +16,13 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: 'assets/images/',
                 src: '**',
-                dest: 'static/images/'
+                dest: 'blog/static/img/'
             },
             fonts: {
                 expand: true,
                 cwd: 'assets/fonts/',
                 src: '**',
-                dest: 'static/fonts/'
+                dest: 'blog/static/fonts/'
             }
         },
         less: {
@@ -31,8 +31,8 @@ module.exports = function (grunt) {
                     compress: false
                 },
                 files: {
-                    'static/css/portfolio/style.css': 'assets/less/portfolio/style.less',
-                    'static/css/style.css': 'assets/less/style.less'
+                    'blog/static/css/portfolio/style.css': 'assets/less/portfolio/style.less',
+                    'blog/static/css/style.css': 'assets/less/style.less'
                 }
             }
         },
@@ -42,8 +42,8 @@ module.exports = function (grunt) {
             },
             combine: {
                 files: {
-                    'static/css/style.css': [
-                        'static/css/style.css'
+                    'blog/static/css/style.css': [
+                        'blog/static/css/style.css'
                     ]
                 }
             }
@@ -55,7 +55,7 @@ module.exports = function (grunt) {
                     'bower_components/jquery/dist/jquery.js'
 
                 ],
-                dest: 'static/js/script.js'
+                dest: 'blog/static/js/script.js'
             }
         },
         uglify: {
@@ -63,14 +63,14 @@ module.exports = function (grunt) {
                 banner: '/*! <%= pkg.name %> v<%= pkg.version %>, <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'static/js/script.js',
-                dest: 'static/js/script.js'
+                src: 'blog/static/js/script.js',
+                dest: 'blog/static/js/script.js'
             },
             pages: {
                 expand: true,
                 cwd: 'assets/js/pages/',
                 src: '*.js',
-                dest: 'static/js/'
+                dest: 'blog/static/js/'
             }
         },
         watch: {

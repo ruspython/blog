@@ -17,9 +17,9 @@ article {
   background: #ffffff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
-article .text {
-  font-size: 1.3em;
-  margin: 10px;
+article .article-text {
+  font-size: 1.1em;
+  margin: 17px;
 }
 article pre {
   font-size: 0.8em;

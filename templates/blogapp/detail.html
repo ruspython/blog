@@ -7,7 +7,7 @@
         <article>
             <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
 
-            <div>{{ post.text|safe|linebreaksbr|my_escape }}</div>
+            <div class="article-text">{{ post.text|safe|linebreaksbr|my_escape }}</div>
             <div class="extra-info">
                 <p>{{ post.timestamp|date:"d M, Y" }}</p>
             </div>

@@ -25,9 +25,10 @@ article {
   border-top: solid 5px @header-color;
   background: @bgcolor-article;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  div {
-    font-size: 1.3em;
-    margin: 10px;
+
+  .article-text {
+    font-size: 1.1em;
+    margin: 17px;
   }
   pre {
     font-size: 0.8em;
@@ -54,27 +55,48 @@ header {
 
 .extra-info {
   display: block;
-  font-size: 0.7em;
   color: @header-color;
-  margin: 1% 10px;
-  width: 50%;
-  height: 50px;
+  margin: 2% 10px;
+  height: 90px;
+  width: 100%;
+
   p {
-    display: inline;
-    float: left;
+    display: block;
+    float: right;
     font-style: italic;
-    margin: 6% 6% 0 0;
+    font-size: 0.8em;
+
   }
-  a {
+  .disqus-thread {
     display: inline;
     float: left;
-    margin-top: 6%;
     font-size: 1.2em;
+    margin-top: 1em;
+  }
+  .tag-links {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 2em;
+    a {
+      background-color: @header-color;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      padding: 7px;
+
+      &:hover {
+        background-color: @header-color;
+        color: #dce9cf;
+      }
+    }
   }
 }
 
 .paginator {
   list-style: none;
+
   margin: 3% 35%;
   margin-bottom: 8%;
   font-size: 2em;
@@ -102,12 +124,46 @@ header {
   }
 }
 
+.blog-link {
+  position: fixed;
+  margin: 20px 15px;
+  cursor: pointer;
+  z-index: 999;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  transition: 0.1s;
+  &:hover {
+    width: 44px;
+    height: 44px;
+    left: 8px;
+    top: 8px;
+  }
+}
+
+.scrollTop {
+  display: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: @header-color;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 h1 {
   font-size: 4em;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 p {
@@ -122,7 +178,7 @@ h1, h2 {
   }
 }
 
-@media (max-width: 721px) {
+@media (max-width: 801px) {
   section.articles {
     display: block;
     margin: 0 2%;
@@ -142,11 +198,14 @@ h1, h2 {
       margin: 10px;
     }
   }
+
   .paginator {
     margin: 3% 20%;
-    .item-index {
-      display: none;
-    }
+
+  }
+
+  .blog-link {
+    display: none;
   }
 
 }

@@ -7,13 +7,17 @@
             <article>
                 <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
 
-                <div>{{ post.text.excerpt|safe|linebreaksbr|my_escape }}</div>
+                <div class="article-text">{{ post.text.excerpt|safe|linebreaksbr|my_escape }}</div>
 
                 <div class="extra-info">
+                    <div class="tag-links">
+                        {% for tag in post.get_tags %}
+                            <a href="{% url 'posts_by_tag_view' tag.name %}">{{ tag.name }}</a>
+                        {% endfor %}
+                    </div>
                     <p>{{ post.timestamp|date:"d M, Y" }}</p>
-                    <a href="{{ post.get_absolute_url }}#disqus_thread"></a>
+                    <a class="disqus-thread" href="{{ post.get_absolute_url }}#disqus_thread"></a>
                 </div>
-
             </article>
         {% endfor %}
     </section>

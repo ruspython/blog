@@ -7,7 +7,8 @@ from django.template.defaultfilters import slugify
 LT = '&lt;'
 GT = '&gt;'
 
-EXCLUDE_TAGS = ('code', 'pre', 'img', 'br', 'strong', 'b', 'i', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',)
+EXCLUDE_TAGS = ('code', 'pre', 'img', 'br', 'strong', 'b', 'i', 'em', 'h1',
+                'h2', 'h3', 'h4', 'h5', 'h6', 'a', 'ul', 'ol', 'li',)
 
 
 class EscapeHTMLParser(HTMLParser):

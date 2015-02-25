@@ -1,3 +1,4 @@
+
 """
 Django settings for blog project.
 
@@ -10,8 +11,6 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
-from django.utils.translation import ugettext_lazy as _
-
 gettext = lambda s: s
 
 import os
@@ -22,18 +21,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: don't run with debug turned on in production!
+
 SECRET_KEY = '2vs%z@gfqer6!0@dccmznnxmnpw5#!ogwx3i9+(2=l$*k-x^ck'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-TEMPLATE_DEBUG = True
-
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
+
+SITE_ID = 1
 
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -42,9 +38,12 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
     'blogapp',
     'portfolio',
-    'tinymce',
+    'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -72,19 +71,6 @@ ROOT_URLCONF = 'blog.urls'
 WSGI_APPLICATION = 'blog.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'blog',
-        'USER': 'vlad',
-        'PASSWORD': '',
-        'HOST': '',
-    }
-}
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
@@ -92,7 +78,7 @@ DATABASES = {
 LANGUAGE_CODE = 'ru'
 
 LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'blog', 'locale'),
+    os.path.join(BASE_DIR, '../', 'locale'),
 )
 
 LANGUAGES = (
@@ -113,27 +99,22 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'templates'),
+    os.path.join(BASE_DIR, '../templates'),
 )
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, '../media')
 
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, '../static')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
-TINYMCE_JS_URL = "media/js/tiny_mce/tiny_mce.js"
-
-
 
